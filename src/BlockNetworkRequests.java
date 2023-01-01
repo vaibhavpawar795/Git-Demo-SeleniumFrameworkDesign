@@ -11,20 +11,15 @@ import com.google.common.collect.ImmutableList;
 public class BlockNetworkRequests {
 
 	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "/Users/rahulshetty/Documents/chromedriver");
 
-		//css , images
-		
-
-System.setProperty("webdriver.chrome.driver", "/Users/rahulshetty/Documents/chromedriver");
-		
 		ChromeDriver driver = new ChromeDriver();
-		//log file ->
-		
+		// log file ->
+
 		DevTools devTools = driver.getDevTools();
 		devTools.createSession();
 		devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
-		devTools.send(Network.setBlockedURLs(ImmutableList.of("*.jpg","*.css")));
+		devTools.send(Network.setBlockedURLs(ImmutableList.of("*.jpg", "*.css")));
 		long startTime = System.currentTimeMillis();
 		driver.get("https://rahulshettyacademy.com/angularAppdemo/");
 		driver.findElement(By.linkText("Browse Products")).click();
@@ -33,16 +28,14 @@ System.setProperty("webdriver.chrome.driver", "/Users/rahulshetty/Documents/chro
 		System.out.println(driver.findElement(By.cssSelector("p")).getText());
 		long endTime = System.currentTimeMillis();
 		System.out.println(endTime - startTime);
-		//1793 2033
-		
-		
-		
-		 
-		
-		
-		
-		
-		
+		// 1793 2033
+
+		System.out.println("Browser automation");
+
+		System.out.println("Browser automation");
+
+		System.out.println("WebAutomation");
+		System.out.println("WebAutomation");
 	}
 
 }
