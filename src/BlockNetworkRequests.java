@@ -10,6 +10,15 @@ import com.google.common.collect.ImmutableList;
 
 public class BlockNetworkRequests {
 
+	public void tests() {
+		System.out.println("Browser automation");
+
+		System.out.println("Browser automation");
+
+		System.out.println("WebAutomation");
+		System.out.println("WebAutomation");
+	}
+	
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "/Users/rahulshetty/Documents/chromedriver");
 
@@ -29,13 +38,6 @@ public class BlockNetworkRequests {
 		long endTime = System.currentTimeMillis();
 		System.out.println(endTime - startTime);
 		// 1793 2033
-
-		System.out.println("Browser automation");
-
-		System.out.println("Browser automation");
-
-		System.out.println("WebAutomation");
-		System.out.println("WebAutomation");
 	}
 
 }
