@@ -8,6 +8,8 @@ import java.net.URI;
 import java.util.function.Predicate;
 
 public class BasicAuthentication {
+	
+	
 	public void testschanges() {
 		System.out.println("Browser automation");
 

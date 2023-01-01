@@ -6,7 +6,22 @@ import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.devtools.v93.emulation.Emulation;
 
 public class MobileEmulatorTest {
+	public void testschanges() {
+		System.out.println("Browser automation");
 
+		System.out.println("Browser automation");
+
+		System.out.println("WebAutomation");
+		System.out.println("WebAutomation");
+	}
+	public void testschangesinsaved() {
+		System.out.println("Browser automation");
+
+		System.out.println("Browser automation");
+
+		System.out.println("WebAutomation");
+		System.out.println("WebAutomation");
+	}
 	public static void main(String[] args) throws InterruptedException  {
 		// TODO Auto-generated method stub
 
